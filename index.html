@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>에어비엔비 클론 코딩</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./imgs/comp_0685990 (1).png" alt="패스트캠퍼스 로고">
+        <div id="little-search">
+            <button class="listtle-search-button">어디든지</button><span class="divider"></span>
+            <button class="listtle-search-button">언제든 일주일</button><span class="divider"></span>
+            <button class="listtle-search-button">게스트 추가</button>
+            <div id="magnifying_glass_wrapper">
+                <img id="magnifying_glass_icon" src="./imgs/Magnifying_glass_icon.svg" alt="돋보기 아이콘">
+            </div>
+        </div>
+        <div id="header-right-section">
+            <div id="do-airbnb">당신의 강의를 패스트캠퍼스하세요.</div>
+            <div id="profile-section">
+                <img width="16" src="./imgs/list.svg" alt="리스트 아이콘">
+                <img width="30" src="./imgs/user-circle.svg" alt="유저 서클 아이콘">
+            </div>
+        </div>
+    </header>
+    <div id="scroll-controller">
+        <div class="scroll-wrapper" id="left-scroll">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" 
+            style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+            <path fill="none" d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
+        </div>
+        <div class="scroll-wrapper" id="right-scroll">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" 
+            style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
+        </div>
+    </div>
+    <div class="white-wrapper1"></div>
+    <div class="white-wrapper2"></div>
+    <div id="category-bar">
+        <button class="category-button" id="active-category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/armchair.svg" alt="의자 아이콘">
+            <img class="active-img" src="./imgs/armchair_black.svg" alt="의자 아이콘">
+            <div>의자</div>
+        </button>
+        <button class="category-button">
+            <img class="inactive-img" src="./imgs/airplane.svg" alt="비행기 아이콘">
+            <img class="active-img" src="./imgs/airplane_black.svg" alt="비행기 아이콘">
+            <div>비행기</div>
+        </button>
+    </div>
+</body>
+
+<main>
+<div class="place-items-wrapper">
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/201/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/202/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/203/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/204/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/230/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/206/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/231/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/208/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/209/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/210/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/211/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/212/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/213/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/214/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/215/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/216/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/217/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+    <div #id="place-list-item">
+        <div class="place-img-wrapper">
+            <img src="https://picsum.photos/id/218/1000/1000" alt="place image">
+            <img class="heart-icon" src="./imgs/heart.svg" alt="하트 아이콘">
+        </div>
+        <div class="description-section">
+            <div class="description-section-title">lorem ipsum1</div>
+            <div>lorem ipsum2</div>
+            <div>lorem ipsum3</div>
+        </div>
+    </div>
+</div>
+</main>
+<button id="floating-map-button">
+    <span>지도 표시하기</span>
+    <img width="16" src="./imgs/map-trifold.svg" alt="지도 아이콘">
+</button>
+<script>
+    //아이콘 선택시 애니메이션
+    document.querySelectorAll('.category-button').forEach(button =>{
+        button.addEventListener("click", event => {
+            document.querySelector("#active-category-button").removeAttribute("id");
+            button.setAttribute("id", "active-category-button");
+        })
+    })
+
+    //스크롤
+    const list = document.querySelector("#category-bar")
+    const listScrollWidth = list.scrollWidth;
+    const listClientWidth = list.clientWidth;
+    const leftScrollButton = document.querySelector("#left-scroll");
+    const rightScrollButton = document.querySelector("#right-scroll");
+
+    let startX = 0;
+    let nowX = 0;
+    let endX = 0;
+    let listX = 0;
+
+    const getClientX = (e) => {
+        const isTouches = e.touches ? true : false;
+        return isTouches ? e.touches[0].clientX : e.clientX;
+    };
+
+    const getTranslateX = () => {
+        return parseInt(getComputedStyle(list).transform.split(/[^\-0-9]+/g)[5]);
+    };
+
+    const setTranslateX = (x) => {
+        list.style.transform = `translateX(${x}px)`;
+    };
+    
+    const onScrollStart = (e) => {
+        startX = getClientX(e);
+        window.addEventListener('mousemove', onScrollMove);
+        window.addEventListener('touchmove', onScrollMove);
+        window.addEventListener('mouseup', onScrollEnd);
+        window.addEventListener('touchend', onScrollEnd);
+    };
+
+    const onScrollMove = (e) => {
+        nowX = getClientX(e);
+        setTranslateX(listX + nowX - startX);
+    };
+
+    const onClick = (e) => {
+        if (startX - endX !== 0) {
+          e.preventDefault();
+        }
+    };
+
+    const onScrollEnd = (e) => {
+        endX = getClientX(e);
+        listX = getTranslateX();
+        if (listX > 0) {
+            setTranslateX(0);
+            list.style.transition = `all 0.3s ease`;
+            listX = 0;
+        } else if (listX < listClientWidth - listScrollWidth) {
+            setTranslateX(listClientWidth - listScrollWidth);
+            list.style.transition = `all 0.3s ease`;
+            listX = listClientWidth - listScrollWidth;
+        }
+
+        window.removeEventListener('mousedown', onScrollStart);
+        window.removeEventListener('touchstart', onScrollStart);
+        window.removeEventListener('mousemove', onScrollMove);
+        window.removeEventListener('touchmove', onScrollMove);
+        window.removeEventListener('mouseup', onScrollEnd);
+        window.removeEventListener('touchend', onScrollEnd);
+        window.removeEventListener('click', onClick);
+
+        setTimeout(() => {
+            bindEvents();
+            list.style.transition = '';
+        }, 300);
+    };
+
+    const bindEvents = () => {
+        list.addEventListener('mousedown', onScrollStart);
+        list.addEventListener('touchstart', onScrollStart);
+        list.addEventListener('click', onClick);
+    };
+
+    bindEvents();
+    setTranslateX(0);
+    //스크롤 버튼
+    let isLeftPressed = false;
+    let isRightPressed = false;
+
+    leftScrollButton.addEventListener("mousedown", (e)=>{
+        isLeftPressed = true;
+        isRightPressed = false;
+        doScroll();
+    } )
+
+    leftScrollButton.addEventListener("mouseup", ()=>{
+        isLeftPressed = false;
+        doScroll();
+    } )
+
+    rightScrollButton.addEventListener("mousedown",()=>{
+        isLeftPressed = false;
+        isRightPressed = true;
+        doScroll();
+
+    })
+
+    rightScrollButton.addEventListener("mouseup",()=>{
+        isRightPressed = false;
+        doScroll();
+        if (listX < (listClientWidth - listScrollWidth - 220)){
+            listX = listClientWidth - listScrollWidth - 20;
+            setTranslateX(listX);
+        }
+    })
+
+    
+    const doScroll = () => {
+        if(isLeftPressed || isRightPressed) {
+            if (listX < (listClientWidth - listScrollWidth - 20)){
+                listX = listClientWidth - listScrollWidth;
+            }else{ 
+                listX = getTranslateX();
+            }
+            let scrollTime = 100;
+            console.log(listX, listClientWidth-listScrollWidth);
+            if (listX > 0) {
+                setTranslateX(0);
+                list.style.transition = `all 0.5s ease`;
+                listX = 0;
+            } else if (listX >= (listClientWidth - listScrollWidth - 20)){
+                scrollTime = scrollTime + 100;
+                if(listX < 0 & isLeftPressed) setTranslateX(listX + scrollTime);
+                else if(isRightPressed) setTranslateX(listX -scrollTime);
+                list.style.transition = `all 0.5s ease`;
+                listX = listClientWidth - listScrollWidth - 20;
+            }
+        }
+        setTimeout(doScroll,200);
+    }
+</script>
+</html>
