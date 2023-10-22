@@ -198,14 +198,14 @@ header{
 
 #left-scroll{
     position: absolute;
-    top: 10.5%;
+    top: 7.7rem;
     transform: translate(66%,-55%);
     left: 0;
 }
 
 #right-scroll{
     position: absolute;
-    top: 10.5%;
+    top: 7.7rem;
     transform: translate(-50%,-50%);
     right: 0;
 }
