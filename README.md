@@ -1,7 +1,7 @@
 # Airbnb webpage 클론 코딩
 > 패스트캠퍼스 웹퍼블리싱 완전 정복 : 모션 디자인으로 완성하는 반응형 웹 디자인 강의를 수강하며 만든 웹 페이지입니다.
 
-[Go Webpage](https://jisooovo.github.io/airbnb-clone_coding/)
+[Go Webpage](https://jisooovo.github.io/Clone-Coding-AirBnB/)
 ![airbnb](https://github.com/JisooOvO/airbnb-clone_coding/assets/138751028/e037defa-10e7-4a3b-bf6b-f7369cc4e36c)
 
 ## 사용 기술
